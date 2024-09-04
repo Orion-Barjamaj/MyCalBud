@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+.credits{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #509758;
+}
+
+.nameLink{
+    color: #509758;
+    text-decoration: underline;
+}
+
 html, body {
     height: 100%;
     overflow: hidden;

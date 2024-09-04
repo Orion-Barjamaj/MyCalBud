@@ -35,6 +35,7 @@ function App() {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='waves'>
           <path fill="#7FB685" fillOpacity="1" d="M0,64L40,64C80,64,160,64,240,96C320,128,400,192,480,186.7C560,181,640,107,720,85.3C800,64,880,96,960,138.7C1040,181,1120,235,1200,229.3C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
         </svg>
+        <div className='credits'>Made by <a href='https://github.com/Orion-Barjamaj' target='_blank' className='nameLink'>Orion Barjamaj</a></div>
     </>
   )
 }

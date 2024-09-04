@@ -24,6 +24,12 @@
     -moz-box-shadow: 5px 5px 0px 0px rgba(127,182,133,0.47);
     box-shadow: 5px 5px 0px 0px rgba(127,182,133,0.47);
     cursor: pointer;
+    transition: all ease-in .2s;
+    position: relative;
+}
+
+.submitBtn:hover{
+    background-color: #4a8851;
 }
 
 .getStartedDesc{

@@ -80,19 +80,24 @@ function GetStarted(){
     }
     
     const calculateCalories = () => {
-        const difference = Math.abs(currentWeight - goalWeight);
-        const caloriesNeeded = difference * 7700;
-        const caloriesPerDay = (caloriesNeeded / weeks) / 7;
+        const difference = currentWeight - goalWeight;
+        const TDEE = calculateTDEE();
+        const weightDifference = Math.abs(currentWeight - goalWeight); // Absolute value in kg
+        const totalCaloriesNeeded = weightDifference * 7700; // Total calorie change needed
+        const dailyCaloricAdjustment = (totalCaloriesNeeded / (weeks * 7)); // Spread over the number of days
         let finalCalories = 0;
-    
-        if (currentWeight > goalWeight) {
-            finalCalories = calculateTDEE() - caloriesPerDay;
-        } else if (currentWeight < goalWeight) {
-            finalCalories = calculateTDEE() + caloriesPerDay;
+
+        if (difference > 0) {
+            finalCalories = TDEE - dailyCaloricAdjustment; 
+        } else if (difference < 0) {
+            finalCalories = TDEE + dailyCaloricAdjustment;
         }
-    
+        if (finalCalories < 1200) {
+            finalCalories = 1200; 
+        }
+
         localStorage.setItem('finalCalories', finalCalories);
-    
+
         return Math.round(finalCalories);
     }
     
