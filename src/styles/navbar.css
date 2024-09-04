@@ -1,0 +1,30 @@
+.navBar{
+    width: 98%;
+    min-height: 90px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #7FB685;
+    border-radius: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.changeNameBtn{
+    background-color: #7699D4;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.7rem;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.budName{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+}

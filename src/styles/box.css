@@ -1,0 +1,196 @@
+.box{
+    width: 90%;
+    border: 1px solid #7FB685;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 30px;
+    position: relative;
+}
+
+.error{
+    color: red;
+}
+
+.steps{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7FB685;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.questionTitle{
+    font-weight: 300;
+}
+
+.genderBox{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.genderForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.verticalAlign{
+    flex-direction: column;
+}
+
+.heightChoose{
+    display: flex;
+    gap: 10px;
+}
+
+.genderImg{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.man{
+    background-image: url('../images/gender.png');
+}
+
+.female{
+    background-image: url('../images/female.png');
+}
+
+.genderTitle{
+    transition: all .2s ease-in-out;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.ageInput{
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    height: 40px;
+    transition: .2s all ease-in-out;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.setHeight{
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    background-color: #7fb68540;
+    color: black;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.setHeight:hover{
+    background-color: #7cff8b5b;
+}
+
+.activityLevelBox{
+    width: 50%;
+    height: 200px;
+    background-color: #7fb68540;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.activityLevelBox:hover{
+    background-color: #7cff8b5b;  
+}
+
+.activityLevelImg{
+    height: 190px;
+    width: 190px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sedentary{
+    background-image: url('../images/sedentary.png');
+}
+
+.lightly-active{
+    background-image: url('../images/exercise.png');
+}
+
+.moderately-active{
+    background-image: url('../images/mediumActive.png');
+}
+
+.very-active{
+    background-image: url('../images/running.png');
+}
+
+.extra-active{
+    background-image: url('../images/training.png');
+}
+
+.activityLevelTitle{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.activityLevelText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.activityLevelDesc{
+    color: rgb(58, 58, 58);
+}

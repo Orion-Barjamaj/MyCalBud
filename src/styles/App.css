@@ -1,0 +1,163 @@
+.glassContainer{
+    z-index: 2;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.welcomeHeader{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #7FB685;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+
+.enterNameLabel{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nameInput{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+    transition: .2s;
+    margin-bottom: 40px;
+}
+
+.nameInput:focus, .ageInput:focus{
+    border: 2px solid #7FB685;
+    -webkit-box-shadow:0px 0px 86px 0px rgba(127,182,133,0.56);
+    -moz-box-shadow: 0px 0px 86px 0px rgba(127,182,133,0.56);
+    box-shadow: 0px 0px 86px 0px rgba(127,182,133,0.56);
+}
+
+.startBtn{
+    padding: 10px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #7FB685;
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    color: white;
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: 20px;
+    transition: .2s;
+}
+
+.startBtn:disabled{
+    background-color: #568b5c;
+    color:  #345e39;
+    cursor: not-allowed;
+}
+
+.fruits{
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg);
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out;
+}
+
+.apple{
+    left: 30%;
+    top: 10%;
+    transform: rotate(-12deg);
+    background-image: url('../images/apple.png');
+}
+
+.strawberry{
+    left: 57%;
+    top: 50%;
+    transform: rotate(80deg);
+    max-width: 260px;
+    max-height: 260px;
+    background-image: url('../images/strawberry.png');
+}
+
+.watermelon{
+    top: 65%;
+    left: 10%;
+    transform: rotate(180deg);
+    max-width: 270px;
+    max-height: 270px;
+    background-image: url('../images/watermelon.png');
+}
+
+.orange{
+    top: 22%;
+    left: 80%;
+    max-width: 210px;
+    max-height: 210px;
+    background-image: url('../images/orange.png');
+}
+
+.avocado{
+    top: 10%;
+    left: 5%;
+    transform: rotate(50deg);
+    max-width: 250px;
+    max-height: 250px;
+    background-image: url('../images/avocado.png');
+}
+
+.peach{
+    top: 80%;
+    left: 85%;
+    background-image: url('../images/peach.png');
+}
+
+.pear{
+    top: 1%;
+    left: 60%;
+    max-width: 240px;
+    max-height: 240px;
+    transform: rotate(50deg);
+    background-image: url('../images/pear.png');
+}
+
+.waves{
+    position: absolute;
+    bottom: 0;
+    animation: slide 1.5s ease-in-out 0s 1;
+}
+
+@keyframes slide {
+    0%{
+        bottom: -500px;
+    }100%{
+        bottom: 0;
+    }
+}
