@@ -154,11 +154,22 @@ html, body {
         width: 95%;
     }
 
-    .Calorie-CalcContainer{
-        height: 90%;
-    }
-
     .calorieIntake{
         text-align: center;
+        font-size: 1.5rem;
+        min-width: auto;
+    }
+
+    .calorieDesc{
+        font-size: 1.7rem;
+    }
+
+    .foodInfoContainer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .foodContainer{
+        grid-template-rows: 37px 38px 70px;
     }
 }

@@ -1,6 +1,5 @@
 .Calorie-CalcContainer{
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -14,6 +13,7 @@
     border-radius: 10px;
     padding: 15px;
     color: white;
+    min-width: 420px;
     font-weight: 900;
 }
 
@@ -21,4 +21,63 @@
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
+}
+
+.dietContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mealTime{
+    background-color: #7FB685;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.foodName{
+    line-height: 37px;
+}
+
+.foodContainer{
+    background-color: #58855d;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.mealName{
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.foodContainer{
+    display: grid;
+    grid-template-columns: 75px auto;
+    grid-template-rows: 37px 38px;
+    column-gap: 10px;
+}
+
+.foodImg{
+    width: 75px;
+    height: 75px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.foodInfoContainer{
+    display: flex;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    gap: 5px;
 }
